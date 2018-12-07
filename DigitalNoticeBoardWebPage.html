@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Digital Notice Board</title>
+</head>
+<body>
+   <h1>Digital Notice Board</h1>
+
+   <form method="post" action="change">
+      <label for="slider-1">Notice Message:</label>
+      <input type="text" name="lcd" id="lcd" />  
+      <br />
+  
+      <input type="submit" value="Submit" />
+    </form>
+</body>
+<div> 
+{% if value %}
+  <p>Notice Submitted Successfully: {{ value }}</p>
+{% endif %}
+
+</div>
